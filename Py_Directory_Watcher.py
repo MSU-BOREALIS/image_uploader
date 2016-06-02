@@ -44,10 +44,10 @@ class MyHandler(PatternMatchingEventHandler):
         print("You can find it here: {0}".format(image['link']))
         
 if __name__ == '__main__':
-    args = sys.argv[1:]
+    
     observer = Observer()
     #Modify path in following line of code to where the pictures will be stored.
-    observer.schedule(MyHandler(), path=args[0] if args else 'C:\Users\Trevor\Documents')
+    observer.schedule(MyHandler(), path='C:\Users\Trevor\Documents', recursive = True)
     observer.start()
 
     try:
