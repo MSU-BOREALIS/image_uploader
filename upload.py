@@ -13,7 +13,7 @@ from auth import authenticate
 
 from datetime import datetime
 
-album = None # You can also enter an album ID here
+album = "SLPot" # You can also enter an album ID here
 
 def upload_kitten(client, image_path):
 	'''
